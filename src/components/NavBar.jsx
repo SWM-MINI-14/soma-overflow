@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     },
 });
 
-const NavBar = () => {
+const NavBar = ({user, setUser}) => {
     const classes = useStyles();
 
     return (
@@ -26,12 +26,24 @@ const NavBar = () => {
                         <img alt={'logo'} src={Logo} style={{maxHeight: '50px', maxWidth: '150px'}} />
                     </Link>
                 </Typography>
-                <Link to="/login" className={classes.link}>
-                    <Button color="inherit">로그인</Button>
-                </Link>
-                <Link to="/signup" className={classes.link}>
-                    <Button color="inherit">회원가입</Button>
-                </Link>
+                {
+                    user ? (
+                        <>
+                            {user.username}
+                            <Button onPress={setUser(null)}>로그아웃</Button>
+                        </>
+                    ) : (
+                        <>
+                            <Link to="/login" className={classes.link}>
+                                <Button color="inherit">로그인</Button>
+                            </Link>
+                            <Link to="/signup" className={classes.link}>
+                                <Button color="inherit">회원가입</Button>
+                            </Link>
+                        </>
+                    )
+                }
+
             </Toolbar>
         </AppBar>
     );

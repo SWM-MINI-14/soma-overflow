@@ -36,8 +36,8 @@ const Home = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = listJson;
-                setQuestions(response.items);
+                const response = await axios.get(`http://localhost:8000/api/questions/`);
+                setQuestions(response.data);
             } catch (error) {
                 console.error(error);
             }
@@ -55,11 +55,11 @@ const Home = () => {
             <Typography variant="h4" className={classes.title}>질문 목록</Typography>
             <List>
                 {questions.map((question, idx) => (
-                    <ScrollTrigger key={question.question_id} onEnter={onEnterViewport}>
+                    <ScrollTrigger key={question.id} onEnter={onEnterViewport}>
                         <ListItem
                             className={`${classes.listItem} ${triggered ? classes.triggered : ''}`}
                             component="a"
-                            href={`/questions/${idx}`}
+                            href={`/questions/${question.id}`}
                             alignItems="flex-start"
                         >
                             <ListItemAvatar style={{marginTop: '0'}}>

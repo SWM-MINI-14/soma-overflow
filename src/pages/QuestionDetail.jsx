@@ -81,30 +81,20 @@ const QuestionDetail = () => {
     useEffect(() => {
         const fetchQuestion = async () => {
             try {
-                const response = questionsJson
-                setQuestion(response[id].items[0]);
-                console.log(response[id].items);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-
-        const fetchAnswers = async () => {
-            try {
-                const response = answersJson
-                setAnswers(response[id].items);
+                const response = await axios.get(`http://localhost:8000/api/questions/${id}`);
+                setQuestion(response.data);
+                setAnswers(response.data.answers);
             } catch (error) {
                 console.error(error);
             }
         };
 
         fetchQuestion();
-        fetchAnswers();
     }, [id]);
 
     const formatDate = (timestamp) => {
-        const date = new Date(timestamp * 1000);
-        return date.toLocaleDateString();
+        const date = new Date(timestamp);
+        return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
     };
 
     const transformCodeBlock = (node, index) => {
@@ -127,13 +117,13 @@ const QuestionDetail = () => {
                 <>
                     <Typography variant="h4" className={classes.title}>{question.title}</Typography>
                     <AnimatedPaper elevation={1} sx={{ padding: '1rem' }}>
-                        <Box className={classes.content}>{ReactHtmlParser(question.body, { transform: transformCodeBlock })}</Box>
+                        <Box className={classes.content}>{ReactHtmlParser(question.content, { transform: transformCodeBlock })}</Box>
                         <Typography variant="body2">작성자: {question.owner?.display_name}</Typography>
-                        <Typography variant="body2">작성 날짜: {formatDate(question.creation_date)}</Typography>
+                        <Typography variant="body2">작성 날짜: {formatDate(question.created_at)}</Typography>
                         <Box className={classes.answerContainer}>
                             {question.tags && question.tags.map((tag) => (
-                                <li key={tag}>
-                                    <Chip label={tag} className={classes.chip} />
+                                <li key={tag.name}>
+                                    <Chip label={tag.name} className={classes.chip} />
                                 </li>
                             ))}
                         </Box>
@@ -144,12 +134,12 @@ const QuestionDetail = () => {
                             <AnimatedPaper key={answer.answer_id} className={classes.answer} elevation={1}>
                                 <Box className={classes.answerHeader}>
                                     <Typography variant="body2">작성자: {answer.owner?.display_name}</Typography>
-                                    <Typography variant="body2">작성 날짜: {formatDate(answer.creation_date)}</Typography>
+                                    <Typography variant="body2">작성 날짜: {formatDate(answer.created_at)}</Typography>
                                     <Rating className={classes.rating} value={Math.floor(Math.random() * 5) + 1} readOnly />
                                 </Box>
                                 <Divider />
                                 <Box className={classes.content} sx={{ padding: '1rem' }}>
-                                    {ReactHtmlParser(answer.body, { transform: transformCodeBlock })}
+                                    {ReactHtmlParser(answer.content, { transform: transformCodeBlock })}
                                 </Box>
                             </AnimatedPaper>
                         ))}
