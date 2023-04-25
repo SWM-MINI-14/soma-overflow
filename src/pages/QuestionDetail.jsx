@@ -82,7 +82,7 @@ const QuestionDetail = () => {
         const fetchQuestion = async () => {
             try {
                 const response = questionsJson
-                setQuestion(response[id].items);
+                setQuestion(response[id].items[0]);
                 console.log(response[id].items);
             } catch (error) {
                 console.error(error);
