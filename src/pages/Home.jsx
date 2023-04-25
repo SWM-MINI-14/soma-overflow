@@ -1,10 +1,25 @@
-// src/pages/Home.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Container, Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+    container: {
+        marginTop: '2rem',
+    },
+    title: {
+        marginBottom: '1rem',
+    },
+    listItem: {
+        marginBottom: '1rem',
+        backgroundColor: '#ffffff',
+        borderRadius: '8px',
+    },
+});
 
 const Home = () => {
     const [questions, setQuestions] = useState([]);
-
+    const classes = useStyles();
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -17,18 +32,20 @@ const Home = () => {
 
         fetchData();
     }, []);
-
     return (
-        <div>
-            <h1>질문 목록</h1>
-            <ul>
+        <Container className={classes.container}>
+            <Typography variant="h4" className={classes.title}>질문 목록</Typography>
+            <List>
                 {questions.map(question => (
-                    <li key={question.question_id}>
-                        <a href={`/questions/${question.question_id}`}>{question.title}</a>
-                    </li>
+                    <ListItem key={question.question_id} className={classes.listItem} component="a" href={`/questions/${question.question_id}`} alignItems="flex-start">
+                        <ListItemAvatar>
+                            <Avatar src={question.owner.profile_image} />
+                        </ListItemAvatar>
+                        <ListItemText primary={question.title} secondary={`작성자: ${question.owner.display_name}`} />
+                    </ListItem>
                 ))}
-            </ul>
-        </div>
+            </List>
+        </Container>
     );
 };
 
