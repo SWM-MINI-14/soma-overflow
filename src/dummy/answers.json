@@ -1,0 +1,300 @@
+[
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "나그네",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": false,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 0,
+        "content_license": "CC BY-SA 4.0",
+        "body":  "나만의 맞춤 경로 일치 논리를 만들지 않고는 원하는 것을 얻을 수 없을 것 같습니다. 경로 /home는 모든 경로와 일치 /home/하지만 일치에서 제외되며 경로를 사용하면 모든 경로와 일치하고 소품과 함께 사용하면 정확히 end일치하고 제외됩니다  가능하지 않은 경우 리디렉션 기능을 호출하는 효과가 있는 사용자 지정 빈 구성 요소를 사용하지 않고 항상 에서 에서 /로 리디렉션할 수 있습니까?/homeBrowserRouter예, 가능합니다. /에서 로 또는 그 반대로 리디렉션하여 링크가 일치할 수 있도록 /home하나의 경로 렌더링만 있는 것이 제 제안입니다.Home"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "나그네",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": false,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 1,
+        "content_license": "CC BY-SA 4.0",
+        "body":  "태그를 정렬할 수 없습니다. 파일의 텍스트일 뿐입니다. 요소를 정렬하고 조작할 수 있습니다"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "유저3421",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 2,
+        "content_license": "CC BY-SA 4.0",
+        "body":  "어쩌면 당신이 찾고 있는 것의 usecols매개변수 일까요?pandas.read_csv() 예: https://www.statology.org/pandas-read_csv-usecols/"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "유저3421",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 3,
+        "content_license": "CC BY-SA 4.0",
+        "body": "이 명령은 ab -n 1000 -c 10 http://localhost:8000/HTTP 서버용 부하 테스트 및 벤치마킹 도구인 Apache Benchmark(ab) 도구용입니다. 이 명령에 지정된 매개변수는 다음과 같이 이해할 수 있습니다.-n 1000: 벤치마킹 세션 동안 보낼 총 요청 수를 설정합니다. 이 경우 총 1000개의 요청이 전송됩니다.-c 10: 동시성 수준, 즉 서버로 전송되는 동시 요청 수를 설정합니다. 이 경우 한 번에 10개의 동시 요청이 전송됩니다.이 명령은 10명의 동시 가상 사용자가 10,000개의 요청이 아니라 총 1000개의 요청으로 서버에 도달한다는 것을 의미합니다. 10명의 가상 사용자는 총 요청 수(1000)에 도달할 때까지 계속해서 요청을 동시에 보냅니다. 따라서 이 예에서 10명의 동시 가상 사용자는 각각 100개의 요청(100 * 10 = 1000)을 보내 총 1000개의 요청을 만듭니다. 초당 요청 비율은 이 명령에 지정되지 않습니다. 서버의 성능과 네트워크 상태에 따라 다릅니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "박수혀",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": false,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 4,
+        "content_license": "CC BY-SA 4.0",
+        "body": "그래서 나는 머리를 쪼개고 혼자 생각해야했습니다. 더 낫거나 가장 성능이 좋지는 않지만 내 모든 문제를 깨끗한 방식으로 해결했습니다. 그래서 제 아이디어는 생산자-소비자 스키마를 사용하여 모든 업데이트를 저장하도록 somehwe를 설정하고 테스트는 소비자였습니다. 또한 Asyncio Queue를 사용하기로 결정했습니다 . 전화를 끊고 항목이 대기열에 저장될 때까지 기다리는 방법이 있습니다. 정확히 내가 필요한 것.이제 일부 코드입니다. 우선 Asyncio.Queue에서 확장하는 CustomQueue 클래스를 생성했습니다. 여기에서 skip_n_messagesor 와 같은 일부 기능을 구현하여 discard_n_messages코드를 건조하게 유지할 수 있습니다."
+      },
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "코인",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": false,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 4,
+        "content_license": "CC BY-SA 4.0",
+        "body": "귀하의 질문을 올바르게 이해했다면 사용자 측에서 봇을 테스트하고 싶습니까? 거기에 tgintegration이 있습니다. 원하는 것을 정확하게 수행하는 것 같습니다. https://github.com/JosXa/tgintegration"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "spark",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 5,
+        "content_license": "CC BY-SA 4.0",
+        "body": "바로는 지원이 안됩니다. 대신 NumberPicker를 세개 배치해서 아래처럼 구현할 수 있습니다,\nXML에 NumberPicker를 가로로 세개 배치합니다. DatePicker도 내부적으로 NumberPicker를 사용합니다.\n?\n&lt;LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"horizontal\"&gt;\n \n        &lt;NumberPicker\n            android:id=\"@+id/year_picker\"\n            android:layout_width=\"0dp\"\n            android:layout_height=\"wrap_content\"\n            android:layout_weight=\"1\"\n            android:gravity=\"center\"\n            android:value=\"2022\" /&gt;\n \n        &lt;NumberPicker\n            android:id=\"@+id/month_picker\"\n            android:layout_width=\"0dp\"\n            android:layout_height=\"wrap_content\"\n           android:layout_weight=\"\"\n            android:gravity=\"enter\"\n            android:value=\"\" /&gt;\n \n        &lt;NumberPicker\n            android:id=\"@+id/day_picker\"\n            android:layout_width=\"dp\"\n            android:layout_height=\"rap_content\"\n            android:layout_weight=\"\"\n            android:gravity=\"enter\"\n            android:value=\"9\" /&gt;\n \n    &lt;/LinearLayout&gt;\n \n액티비티에서 아래와 같이 처리합니다.\n?\n@Override\npublic void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n \n        NumberPicker yearPicker = findViewById&lt;NumberPicker&gt;(R.id.year_picker);\n        NumberPicker monthPicker = findViewById&lt;NumberPicker&gt;(R.id.month_picker);\n        NumberPicker dayPicker = findViewById&lt;NumberPicker&gt;(R.id.day_picker);\n \n        yearPicker.setMinValue(2000);\n        yearPicker.setMinValue(2030);\n        yearPicker.setFormatter(new NumberPicker.Formatter() {\n            @Override\n            public String format(int value) {\n                return String.format(\"%d년\", value);\n            }\n        });\n \n        monthPicker.setMinValue(1);\n        monthPicker.setMaxValue(12);\n        monthPicker.setFormatter(new NumberPicker.Formatter() {\n            @Override\n            public String format(int value) {\n                return String.format(\"%d월\", value);\n            }\n        });\n \n        dayPicker.setMinValue(1);\n        dayPicker.setMaxValue(31);\n        dayPicker.setFormatter(new NumberPicker.Formatter() {\n            @Override\n            public String format(int value) {\n                return String.format(\"%d일\", value);\n            }\n        });\n}\n \n월이 바뀔 때 날짜의 범위를 월에 맞게 설정해 주셔야 겠죠. NumberPicker 클래스를 찾아보시면 금방 방법을 찾으실 수 있습니다.\n필요하시면 커스텀 뷰로 만들어 사용하세요.\n이 방법이 아니라면 third party를 찾아보셔도 되구요.\""
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "spark",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 6,
+        "content_license": "CC BY-SA 4.0",
+        "body": "아래 방법을 시도해 보세요.\n \nfinishAffinity를 호출하면 현재 task에서 현재 액티비티를 포함 아래에 있는 모든 액티비티를 강제로 닫는다고 합니다.\nhttps://developer.android.com/reference/android/app/Activity.html#finishAffinity()\n?\npublic class Activity2 extends AppCompatActivity {\n \n    @Override\n    public void onBackPressed() {\n        finishAffinity();\n    }\n \n}"
+      },
+      {
+        "owner": {
+          "reputation": 294062,
+          "user_id": 2877241,
+          "user_type": "registered",
+          "accept_rate": 52,
+          "profile_image": "https://www.gravatar.com/avatar/63d17ecdadc8917254be4fb70e86246b?s=256&d=identicon&r=PG&f=1",
+          "display_name": "박소미",
+          "link": "https://stackoverflow.com/users/2877241/vlad-from-moscow"
+        },
+        "is_accepted": false,
+        "score": 0,
+        "last_activity_date": 1682417710,
+        "creation_date": 1682417710,
+        "answer_id": 76100039,
+        "question_id": 6,
+        "content_license": "CC BY-SA 4.0",
+        "body": "액티비만 사용할 때, 프래그먼트만 사용할 때, 두 가지를 복합적으로 사용할 때 모두 백스택의 동작이 다르게 됙기 때문에, 당연히 그럴 수 밖에 없습니다. 짊문을 보면 마치 액티비티 2개를 왔다갔다 하는데 생기는 문제로 보입니다.\n먼저 프래그먼트의 백스택이 어떻게 관리되는지 lifecycle이 어떻게 되는지에 대한 기본적인 내용은 알고 가셔야 프래그먼트를 큰 문제없이 사용하실 수 있습니다. 질문 내용으로 봐서는 이 점에 대한 이해가 거의 없으셔서 생기는 의문사항으로 보입니다.\n아래 개발자 문서를 먼저 정독해 보시길 권장합니다.\nhttps://developer.android.com/guide/fragments\n간단하게 설명을 드리면, 프래그먼트를 백스택에 추가(push)하게 되면, 백키를 누를 때 마다 백스택에 쌓여있던 프래그먼트가 튀어나오게 (pop)게 됩니다. 예를 들면, MainActivity에 A 그리고 B 프래그먼트를 추가하면, 백스택에는 아래처럼 쌓엑 됩니다.\nMainActivity\nB\n___\nA\n이 때 백키를 누르면, 백스택은 stack이므로 맨위에 있는 B가 나오게 되고, 다시 백키를 누르면 A가 나오게 됩니다. 다시 백키를 누르면 화면에 아무 것도 남지 않고, 다시 백키를 누르면  A를 XML 컴파일타임에 fragment로 추가했을 경우는, 빈화면이 나오지 않고 바로 MainActivity가 종료되고, FragmentManager를 통해 추가한 경우는 빈화면이 나오고 다시 백키를 누를 때 MainActivity가 종료됩니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "소마최고",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 7,
+        "content_license": "CC BY-SA 4.0",
+        "body": "네, 가능합니다! 입력된 숫자들을 기반으로 한 줄에서 sed를 사용하여 여러 개의 치환을 동시에 처리할 수 있습니다. 다음의 스크립트를 참고해 주세요.\n\n```bash\n#!/bin/bash\n\nread -p '숫자입력 : '\nIFS=' ' read -ra numbers <<< '$REPLY'\n\nsed_command='sed'\n\nfor number in '${numbers[@]}'; do\nsed_command+=' -e 's/$number-../??/g''\ndone\n\necho -e '5-?? 10-?? 15-??\n4-?? 9-?? 14-??\n3-?? 8-?? 13-??\n2-?? 7-?? 12-??\n1-?? 6-?? 11-??' | eval $sed_command\n```\n\n이 스크립트는 입력된 숫자들을 기반으로 sed 명령어를 생성하고 이를 사용하여 각 숫자에 해당하는 위치를 '??'로 치환합니다. 입력된 숫자와 상관없이 작동합니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "소마최고",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": true,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 8,
+        "content_license": "CC BY-SA 4.0",
+        "body": "저는 질문 주신 것부터 이해가 안되기는 하는데 나름 이해한 내용 기준으로 말씀드리겠습니다1. 현재 날짜 값과 이벤트 관련 정보를 담은 data 값이 있다\n\n2. 해당 data를 insert 한 뒤, 다음에 동일한 날짜에 이벤트 값이 있으면\n\n날짜값 이외의 값들만 update 하고 싶다\n\n--------------------------------------------------\n\nupdate하기 위해 방법 (해당 날짜에 이미 이벤트 정보가 있다는 가정하에)\n\n1. 해당 날짜 이벤트 정보의 PK값( id )을 가져온다\n\n2. Where문에 PK(id)값에 해당하는 정보에 update문을 실행한다.\n"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "owner": {
+          "reputation": 33992,
+          "user_id": 12002570,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/d6a482d9642ec6f3eccf3162640003ab?s=256&d=identicon&r=PG&f=1",
+          "display_name": "소미",
+          "link": "https://stackoverflow.com/users/12002570/jason"
+        },
+        "is_accepted": false,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "last_edit_date": 1682440089,
+        "creation_date": 1682417619,
+        "answer_id": 76100021,
+        "question_id": 9,
+        "content_license": "CC BY-SA 4.0",
+        "body": "이름이 없을 때는 이름 대신 전화번호를 보여주거나 Contacts를 검색해 보시면 어떨까요?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  }
+]

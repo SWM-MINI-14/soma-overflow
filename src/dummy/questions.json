@@ -1,0 +1,355 @@
+[
+  {
+    "items": [
+      {
+        "tags": ["javascript", "reactjs", "react-router", "react-router-dom"],
+        "owner": {
+          "reputation": 46,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "김소마",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 9,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 0,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "동일한 구성 요소에 대한 여러 경로가 있는 NavLink isActive",
+        "body": "동일한 구성 요소를 렌더링하는 두 개의 경로( /및 ) 가 있습니다. 가능하지 않은 경우 리디렉션을 호출하는 효과가 있는 사용자 정의 빈 구성 요소를 사용하지 않고 항상 에서 에서 /로 리디렉션할 수 있습니까 ?/homeBrowserRouterfunctionhttps://example.com와 not 과 같은 간단한 링크를 주고 싶지만 경로 https://exaple.com/home를 유지하고 싶습니다 /home"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "html",
+          "css"
+        ],
+        "owner": {
+          "reputation": 77,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "임오티",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 19,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 1,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "가변 길이의 앵커 요소에서 세로로 정렬하려면 어떻게 해야 합니까?",
+        "body": "질문에 답하기 위해 데이터베이스 옵션에서 생성되는 다음 HTML 및 CSS가 있습니다. 사용자가 녹색의 아무 곳이나 클릭할 때마다 링크가 실제로 클릭되도록 옵션의 클릭 가능한 영역을 최대로 유지하고 싶습니다.내 어려움은 링크 내에서 텍스트를 수직으로 정렬할 수 없다는 것입니다. 일부 옵션은 옵션 2와 같이 더 긴 텍스트일 수 있기 때문에 고정된 줄 높이를 사용할 수 없습니다. 그러면 줄 사이에 많은 공간이 있으면 이상하게 보일 것입니다.중간에 있는 링크의 텍스트를 세로로 정렬하는 솔루션을 찾는 데 도움을 주시겠습니까?클래스 sm2_link와 연관된 자바스크립트도 있고 코드는 Drupal 7에 의해 생성되지만 이러한 어려움을 해결하는 데 중요한 역할을 하지 않는 관련 세부 정보입니다. 나는 단지 완성을 위해 그것을 언급하고 있습니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": ["python", "pandas"],
+        "owner": {
+          "reputation": 3,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "게으른 원숭이",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 16,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 2,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "CSV 데이터의 특정 열을 새 파일로 추출",
+        "body": "큰 CSV 파일에서 특정 데이터 열을 추출하여 새 파일에 써야 하는 Python 프로젝트에서 작업하고 있습니다. 현재 pandas 라이브러리를 사용하여 CSV를 읽고 열을 선택하고 있지만 파일을 처리하는 데 시간이 오래 걸립니다. 이 프로세스를 최적화하고 더 빠르게 실행할 수 있는 방법이 있습니까?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": ["stress-testing"],
+        "owner": {
+          "reputation": 441,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "유저3421",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 9,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 3,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "ab 명령의 동시성 이해",
+        "body": "ab -n 1000 -c 10 http://localhost:8000/. 여기서 -c를 이해하는 방법? 10명의 동시 가상 사용자가 1000개의 요청에 도달할 것입니까?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": ["testing", "bots", "telegram", "pyrogram"],
+        "owner": {
+          "reputation": 101,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "박수혀",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 7,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 4,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "Telegram에서 Pyrogram을 사용하여 봇 대화를 만드는 방법",
+        "body": "Python Telegram Bot을 사용하여 봇을 작성했습니다 . 그런 다음 자동 테스트를 작성하고 싶었습니다. 그리고 그것이 문제입니다. 메시지를 보내고 내 봇이 응답할 때까지 기다린 다음 해당 메시지에 반응(더 많은 텍스트를 보내거나 버튼을 클릭)하는 방법이 필요했습니다. 글쎄, 나는 온라인에서 좋은 대답을 찾지 못했습니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": ["안드로이드", "datepicker", "spinner"],
+        "owner": {
+          "reputation": 7,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "BigBen",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 20,
+        "answer_count": 1,
+        "score": 10,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 5,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "datepicker spinner 모드에서 표시 형식 변경",
+        "body": "안녕하세요\ndatepicker spinner를 사용하고 있습니다.\n이 때 표시 형식을 변경하고 싶은데 방법이 있을까요??\n예를들면\n2000 | 12 | 05 이런식으로 선택칸이 있다면\n2000년 | 12월 | 5일 이렇게 숫자 뒤에 글자를 붙이고 싶습니다."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "안드로이드",
+          "버튼",
+          "뒤로가기"
+        ],
+        "owner": {
+          "reputation": 30,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "energy",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": false,
+        "view_count": 23,
+        "answer_count": 2,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 6,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "안드로이드 백버튼",
+        "body": "BackKeyHandler.class를 만들어서 activity.finish();로 mainactivity에서 앱을 종료하는데\n다른 액티비티에서 무언갈 수행하고 main으로 오는경우에는 백키하면 전 액티비티로 가는데\n이런 경우에는 main에서 어떻게 해야 앱을 종료시킬수 있나요?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "프로그래밍",
+          "리눅스",
+          "스크립트"
+        ],
+        "owner": {
+          "reputation": 20,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "loco",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": false,
+        "view_count": 23,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 7,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "리눅스 스크립트 질문드립니다.",
+        "body": "고수님들 안녕하세요..\n밑에 파일에서 여러 숫자를 동시에 치환을 해야하는데요!\n\n5-?? 10-?? 15-??\n4-?? 9-?? 14-??\n3-?? 8-?? 13-??\n2-?? 7-?? 12-??\n1-?? 6-?? 11-??\n\n입력 예)\nread -p \"숫자입력 : \" (\"1 2 8 11 15\"를 입력 했을 때)\n\n출력 예) (해당되는 자리를 \"??\"로 치환)\n5-?? 10-?? ??\n4-?? 9-?? 14-??\n3-?? ?? 13-??\n?? 7-?? 12-??\n?? 6-?? ??\n\n이렇게 숫자를 입력받아\nsed를 사용하여 $REPLY에 해당 되는 자리($REPLY-??)를 \"??\"로 치환하려고 합니다.\nsed가 하나씩 밖에 처리가 안되어 여러개를 처리하지 못하고 있는 상황인데\n입력 갯수에 상관없이 '1 2 8 11 15' 이런식으로 입력을 받아 동시에 '??'로 치환 가능할지 여쭙니다..\n부탁드립니다 고수님들 ㅠㅠ\n"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "데이터베이스",
+          "안드로이드"
+        ],
+        "owner": {
+          "reputation": 42,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "안드로이드 초보",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 18,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 8,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "DB 활용 질문 있습니다.",
+        "body": "현재 날짜 값을 date로 가져와서 date 값과 어떠한 이벤트를 저장하고  DB에 insert 후 만약 같은 날짜에 다른 이벤트로 변경하여 저장하려면 insert가 아닌 update해서  기존 date에 딸린 데이터 값들만 바꾸려면 어떻게 해야할까요?\n"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "안드로이드 오류",
+          "안드로이드"
+        ],
+        "owner": {
+          "reputation": 124,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "배고프다",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": false,
+        "view_count": 18,
+        "answer_count": 1,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 9,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "통화기록 조회 CallLog.Calls.CACHED_NAME값이 -1로 나옵니다.",
+        "body": "(USB 디버깅으로 폰에서 직접 디버깅 중입니다.)\n\n통화목록 조회시\n\n휴대전화에 저장된 이름을 표시하려 합니다.\n\nAPI를 보면 CACHE에 저장된 경우만 반환한다고 합니다.\n\n-1이 나오는 이유는 이때문인데\n\n그럼 휴대전화 통화목록처럼 저장된 사람 이름이 나오게끔 하려면 어떤 처리를 해야할까요?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  },
+  {
+    "items": [
+      {
+        "tags": [
+          "안드로이드",
+          "버튼",
+          "뒤로가기"
+        ],
+        "owner": {
+          "reputation": 124,
+          "user_id": 21443773,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/898f1da5631f07c011956497e5aa39ea?s=256&d=identicon&r=PG&f=y&so-version=2",
+          "display_name": "몽몽이",
+          "link": "https://stackoverflow.com/users/21443773/vlad-from-moscow"
+        },
+        "is_answered": true,
+        "view_count": 18,
+        "answer_count": 3,
+        "score": 1,
+        "last_activity_date": 1682440089,
+        "creation_date": 1682415766,
+        "last_edit_date": 1682416082,
+        "question_id": 10,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://stackoverflow.com/questions/76099741/using-declaration-compiles-in-gcc-and-msvc-but-rejected-in-clang",
+        "title": "뒤로가기 버튼 활용하기",
+        "body": "BackKeyHandler.class를 만들어서 activity.finish();로 mainactivity에서 앱을 종료하는데\n\n다른 액티비티에서 무언갈 수행하고 main으로 오는경우에는 백키하면 전 액티비티로 가는데\n\n이런 경우에는 main에서 어떻게 해야 앱을 종료시킬수 있나요?"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 71
+  }
+
+
+]
