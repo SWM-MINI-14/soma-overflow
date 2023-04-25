@@ -4,6 +4,7 @@ import { Container, Typography, List, ListItem, ListItemText, ListItemAvatar, Av
 import { makeStyles } from '@mui/styles';
 import { identiconSvg } from 'https://cdn.jsdelivr.net/npm/minidenticons@3.1.2/minidenticons.min.js'
 import listJson from '../dummy/list.json';
+import ScrollTrigger from 'react-scroll-trigger';
 
 const useStyles = makeStyles({
     container: {
@@ -16,12 +17,22 @@ const useStyles = makeStyles({
         marginBottom: '1rem',
         backgroundColor: '#ffffff',
         borderRadius: '8px',
+        boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
+        opacity: 0,
+        transform: 'translateY(50px)',
+        transition: 'opacity 1s ease, transform 1s ease',
+    },
+    triggered: { // triggered 클래스 정의
+        opacity: 1,
+        transform: 'translateY(0)',
     },
 });
 
 const Home = () => {
     const [questions, setQuestions] = useState([]);
+    const [triggered, setTriggered] = useState(false);
     const classes = useStyles();
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -34,17 +45,29 @@ const Home = () => {
 
         fetchData();
     }, []);
+
+    const onEnterViewport = () => {
+        setTriggered(true);
+    }
+
     return (
         <Container className={classes.container}>
             <Typography variant="h4" className={classes.title}>질문 목록</Typography>
             <List>
                 {questions.map((question, idx) => (
-                    <ListItem key={question.question_id} className={classes.listItem} component="a" href={`/questions/${idx}`} alignItems="flex-start">
-                        <ListItemAvatar>
-                            <identicon-svg username={question.owner.display_name}></identicon-svg>
-                        </ListItemAvatar>
-                        <ListItemText primary={question.title} secondary={`작성자: ${question.owner.display_name}`} />
-                    </ListItem>
+                    <ScrollTrigger key={question.question_id} onEnter={onEnterViewport}>
+                        <ListItem
+                            className={`${classes.listItem} ${triggered ? classes.triggered : ''}`}
+                            component="a"
+                            href={`/questions/${idx}`}
+                            alignItems="flex-start"
+                        >
+                            <ListItemAvatar style={{marginTop: '0'}}>
+                                <identicon-svg style={{marginRight: '10'}} username={question.owner.display_name}></identicon-svg>
+                            </ListItemAvatar>
+                            <ListItemText primary={question.title} secondary={`작성자: ${question.owner.display_name}`} />
+                        </ListItem>
+                    </ScrollTrigger>
                 ))}
             </List>
         </Container>
