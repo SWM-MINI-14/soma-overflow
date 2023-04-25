@@ -1,9 +1,10 @@
 // src/components/NavBar.jsx
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/smoverflow_horizontal.png';
+import {postLogout} from "../apis/apiServices.js";
 
 const useStyles = makeStyles({
     title: {
@@ -13,10 +14,32 @@ const useStyles = makeStyles({
         textDecoration: 'none',
         color: 'inherit',
     },
+    username: {
+        marginRight: '1rem',
+    },
+    logoutButton: {
+        marginRight: '1rem',
+        backgroundColor: 'rgba(255, 255, 255, 0.15)',
+        '&:hover': {
+            backgroundColor: 'rgba(255, 255, 255, 0.25)',
+        },
+    },
 });
 
 const NavBar = ({user, setUser}) => {
     const classes = useStyles();
+
+    const handleLogout = async () => {
+        try {
+            const response = await postLogout();
+            if (response.status === 200) {
+                setUser(null);
+                localStorage.removeItem('user')
+            }
+        } catch (error) {
+            console.error('Error during logout:', error);
+        }
+    };
 
     return (
         <AppBar position="static">
@@ -27,10 +50,12 @@ const NavBar = ({user, setUser}) => {
                     </Link>
                 </Typography>
                 {
-                    user ? (
+                    user!==null ? (
                         <>
-                            {user.username}
-                            <Button onPress={setUser(null)}>로그아웃</Button>
+                            <Box display="flex" alignItems="center">
+                                <Typography variant="h6" className={classes.username}>{user.username}</Typography>
+                                <Button onClick={handleLogout} variant={"contained"} className={classes.logoutButton}>로그아웃</Button>
+                            </Box>
                         </>
                     ) : (
                         <>

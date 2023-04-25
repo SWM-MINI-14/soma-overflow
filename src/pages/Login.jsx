@@ -3,8 +3,9 @@ import axios from 'axios';
 import { TextField, Button, Container, Typography, Alert } from '@mui/material';
 import { Box } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
+import {postLogin} from "../apis/apiServices.js";
 
-const Login = ({ setUser }) => {
+const Login = ({setUser}) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -13,13 +14,10 @@ const Login = ({ setUser }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/api/login/', {
-                    username: username,
-                    password: password,
-                }
-            );
+            const response = await postLogin({body: {username: username, password: password}});
             if (response.status === 200) {
-                setUser(response.data);
+                localStorage.setItem('user', JSON.stringify(response.data.data));
+                setUser(response.data.data);
                 navigate('/');
             }
         } catch (error) {

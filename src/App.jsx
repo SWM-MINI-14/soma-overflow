@@ -9,10 +9,15 @@ import {
     Routes
 } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import CreatePost from "./pages/CreatePost.jsx";
 
 function App() {
-    const [user, setUser] = useState();
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
+
+    useEffect(() => {
+        setUser(JSON.parse(localStorage.getItem('user')));
+    },[])
 
     return (
         <BrowserRouter>
@@ -22,6 +27,7 @@ function App() {
                 <Route key="/questions" path="/questions/:id" element={<QuestionDetail/>} />
                 <Route key="/login" path="/login" element={<Login setUser={setUser}/>} />
                 <Route key="/signup" path="/signup" element={<Signup setUser={setUser}/>} />
+                <Route path="/create-post" element={<CreatePost />} />
             </Routes>
         </BrowserRouter>
     );

@@ -63,9 +63,9 @@ const Home = () => {
                             alignItems="flex-start"
                         >
                             <ListItemAvatar style={{marginTop: '0'}}>
-                                <identicon-svg style={{marginRight: '10'}} username={question.owner.display_name}></identicon-svg>
+                                <identicon-svg style={{marginRight: '10'}} username={question.owner.username}></identicon-svg>
                             </ListItemAvatar>
-                            <ListItemText primary={question.title} secondary={`작성자: ${question.owner.display_name}`} />
+                            <ListItemText primary={question.title} secondary={`작성자: ${question.owner.username}`} />
                         </ListItem>
                     </ScrollTrigger>
                 ))}
