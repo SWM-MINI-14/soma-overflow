@@ -8,10 +8,12 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
     return (
         <BrowserRouter>
+            <NavBar />
             <Routes>
                 <Route key="/" path="/" exact element={<Home/>} />
                 <Route key="/questions" path="/questions/:id" element={<QuestionDetail/>} />

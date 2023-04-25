@@ -1,7 +1,44 @@
-// src/pages/QuestionDetail.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { Container, Typography, Box, Paper, Chip, Avatar, Divider } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+    container: {
+        marginTop: '2rem',
+    },
+    title: {
+        marginBottom: '1rem',
+    },
+    chipContainer: {
+        display: 'flex',
+        justifyContent: 'flex-start',
+        flexWrap: 'wrap',
+        listStyle: 'none',
+        padding: 0,
+        margin: 0,
+    },
+    chip: {
+        margin: '0.5rem',
+    },
+    answerContainer: {
+        marginTop: '2rem',
+    },
+    answer: {
+        padding: '1rem',
+        marginBottom: '1rem',
+    },
+    content: {
+        fontSize: '16px',
+        whiteSpace: 'pre-wrap',
+        '& img': {
+            maxWidth: '100%',
+            height: 'auto',
+        },
+    },
+});
+
 
 const QuestionDetail = () => {
     const [question, setQuestion] = useState(null);
@@ -36,30 +73,45 @@ const QuestionDetail = () => {
         return date.toLocaleDateString();
     };
 
+
+    const classes = useStyles();
+
     return (
-        <div>
+        <Container className={classes.container}>
             {question ? (
                 <>
-                    <h1>{question.title}</h1>
-                    <div dangerouslySetInnerHTML={{ __html: question.body }} />
-                    <p>작성자: {question.owner.display_name}</p>
-                    <p>작성 날짜: {formatDate(question.creation_date)}</p>
-                    <p>태그: {question.tags.join(', ')}</p>
-                    <h2>답변</h2>
-                    <ul>
+                    <Typography variant="h4" className={classes.title}>{question.title}</Typography>
+                    <Paper elevation={1} sx={{ padding: '1rem' }}>
+                        <Box className={classes.content} dangerouslySetInnerHTML={{ __html: question.body }} />
+                        <Typography variant="body2">작성자: {question.owner.display_name}</Typography>
+                        <Typography variant="body2">작성 날짜: {formatDate(question.creation_date)}</Typography>
+                        <Box className={classes.answerContainer}>
+                            {question.tags.map((tag) => (
+                                <li key={tag}>
+                                    <Chip label={tag} className={classes.chip} />
+                                </li>
+                            ))}
+                        </Box>
+                    </Paper>
+                    <Typography variant="h5" className={classes.title}>답변</Typography>
+                    <Box className={classes.answerContainer}>
                         {answers.map((answer) => (
-                            <li key={answer.answer_id}>
-                                <div dangerouslySetInnerHTML={{ __html: answer.body }} />
-                                <p>작성자: {answer.owner.display_name}</p>
-                                <p>작성 날짜: {formatDate(answer.creation_date)}</p>
-                            </li>
+                            <Paper key={answer.answer_id} className={classes.answer} elevation={1}>
+                                <Box className={classes.content} dangerouslySetInnerHTML={{ __html: answer.body }} />
+                                <Divider sx={{ marginY: '0.5rem' }} />
+                                <Box display="flex" alignItems="center">
+                                    <Avatar src={answer.owner.profile_image} sx={{ marginRight: '0.5rem' }} />
+                                    <Typography variant="body2">작성자: {answer.owner.display_name}</Typography>
+                                </Box>
+                                <Typography variant="body2">작성 날짜: {formatDate(answer.creation_date)}</Typography>
+                            </Paper>
                         ))}
-                    </ul>
+                    </Box>
                 </>
             ) : (
                 <p>Loading...</p>
             )}
-        </div>
+        </Container>
     );
 };
 
