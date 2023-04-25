@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Container, Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { identiconSvg } from 'https://cdn.jsdelivr.net/npm/minidenticons@3.1.2/minidenticons.min.js'
+import listJson from '../dummy/list.json';
 
 const useStyles = makeStyles({
     container: {
@@ -24,8 +25,8 @@ const Home = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://api.stackexchange.com/2.2/questions?site=stackoverflow");
-                setQuestions(response.data.items);
+                const response = listJson;
+                setQuestions(response.items);
             } catch (error) {
                 console.error(error);
             }
@@ -37,8 +38,8 @@ const Home = () => {
         <Container className={classes.container}>
             <Typography variant="h4" className={classes.title}>질문 목록</Typography>
             <List>
-                {questions.map(question => (
-                    <ListItem key={question.question_id} className={classes.listItem} component="a" href={`/questions/${question.question_id}`} alignItems="flex-start">
+                {questions.map((question, idx) => (
+                    <ListItem key={question.question_id} className={classes.listItem} component="a" href={`/questions/${idx}`} alignItems="flex-start">
                         <ListItemAvatar>
                             <identicon-svg username={question.owner.display_name}></identicon-svg>
                         </ListItemAvatar>
