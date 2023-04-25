@@ -3,6 +3,9 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Box, Paper, Chip, Avatar, Divider } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 const useStyles = makeStyles({
     container: {
@@ -37,10 +40,20 @@ const useStyles = makeStyles({
             height: 'auto',
         },
     },
+    answerHeader: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '0.5rem',
+        backgroundColor: '#f8f9fa',
+        borderTopLeftRadius: '4px',
+        borderTopRightRadius: '4px',
+    },
 });
 
 
 const QuestionDetail = () => {
+    const classes = useStyles();
     const [question, setQuestion] = useState(null);
     const [answers, setAnswers] = useState([]);
     const { id } = useParams();
@@ -73,8 +86,19 @@ const QuestionDetail = () => {
         return date.toLocaleDateString();
     };
 
+    const transformCodeBlock = (node, index) => {
+        if (node.type === 'tag' && node.name === 'code') {
+            const languageClass = node.attribs && node.attribs.class ? node.attribs.class : 'language-javascript';
+            const language = languageClass.split('-')[1] || 'javascript';
+            const code = node.children[0].data;
+            return (
+                <SyntaxHighlighter key={index} language={language} style={docco}>
+                    {code}
+                </SyntaxHighlighter>
+            );
+        }
+    };
 
-    const classes = useStyles();
 
     return (
         <Container className={classes.container}>
@@ -82,7 +106,7 @@ const QuestionDetail = () => {
                 <>
                     <Typography variant="h4" className={classes.title}>{question.title}</Typography>
                     <Paper elevation={1} sx={{ padding: '1rem' }}>
-                        <Box className={classes.content} dangerouslySetInnerHTML={{ __html: question.body }} />
+                        <Box className={classes.content}>{ReactHtmlParser(question.body, { transform: transformCodeBlock })}</Box>
                         <Typography variant="body2">작성자: {question.owner.display_name}</Typography>
                         <Typography variant="body2">작성 날짜: {formatDate(question.creation_date)}</Typography>
                         <Box className={classes.answerContainer}>
@@ -97,13 +121,14 @@ const QuestionDetail = () => {
                     <Box className={classes.answerContainer}>
                         {answers.map((answer) => (
                             <Paper key={answer.answer_id} className={classes.answer} elevation={1}>
-                                <Box className={classes.content} dangerouslySetInnerHTML={{ __html: answer.body }} />
-                                <Divider sx={{ marginY: '0.5rem' }} />
-                                <Box display="flex" alignItems="center">
-                                    <Avatar src={answer.owner.profile_image} sx={{ marginRight: '0.5rem' }} />
+                                <Box className={classes.answerHeader}>
                                     <Typography variant="body2">작성자: {answer.owner.display_name}</Typography>
+                                    <Typography variant="body2">작성 날짜: {formatDate(answer.creation_date)}</Typography>
                                 </Box>
-                                <Typography variant="body2">작성 날짜: {formatDate(answer.creation_date)}</Typography>
+                                <Divider />
+                                <Box className={classes.content} sx={{ padding: '1rem' }}>
+                                    {ReactHtmlParser(answer.body, { transform: transformCodeBlock })}
+                                </Box>
                             </Paper>
                         ))}
                     </Box>
